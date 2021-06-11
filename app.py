@@ -1,4 +1,6 @@
 import pickle
+import sys
+import logging
 from flask import Flask, request
 #from flask import jsonify
 from score import predict_yield
@@ -14,7 +16,7 @@ def predict():
 	result = predict_yield(data, model)
 	return result.tolist()
 	#return jsonify(result)
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
