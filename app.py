@@ -10,7 +10,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def predict():
 	data = request.get_json()
-	with open('./model_files/dfr_model.bin', 'rb') as model_in:
+	with open('./model_files/dfr_model.pickle', 'rb') as model_in:
 		model = pickle.load(model_in)
 		model_in.close()
 	result = predict_yield(data, model)
