@@ -13,8 +13,10 @@ def predict():
     model_path = './outputs/model.joblib'
     model = joblib.load(model_path)
     result = predict_yield(data, model)
+    result = list(result)
     return jsonify(result)
 
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
+
 
