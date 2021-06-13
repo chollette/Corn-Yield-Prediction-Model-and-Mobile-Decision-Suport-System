@@ -9,12 +9,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def predict():
-	data = request.get_json()
-	model_path = './outputs/model.joblib'
-        model = joblib.load(model_path)
-	result = predict_yield(data, model)
-	#return result.tolist()
-	return jsonify(result)
+    data = request.get_json()
+    model_path = './outputs/model.joblib'
+    model = joblib.load(model_path)
+    result = predict_yield(data, model)
+    return jsonify(result)
 
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
