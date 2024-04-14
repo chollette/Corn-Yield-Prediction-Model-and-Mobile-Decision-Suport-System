@@ -6,4 +6,7 @@ gunicorn
 pandas
 numpy
 scikit-learn
+keras
+tensorflow
+xgboost
 
