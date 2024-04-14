@@ -9,13 +9,6 @@
 
 Crop yield prediction has been modeled on the assumption that there is no interaction between weather and soil variables.  However, this paper argues that an interaction exists, and it can be finely modelled using the Kendall Correlation coefficient. Given the nonlinearity of the interaction between weather and soil variables, a deep neural network regressor (DNNR) is carefully designed with consideration to the depth, number of neurons of the hidden layers, and the hyperparameters with their optimizations. Additionally, a new metric, the average of absolute root squared error (ARSE) is proposed to combine the strengths of root mean square error (RMSE) and mean absolute error (MAE). With the ARSE metric, the proposed DNNR(s), optimised random forest regressor (RFR) and the extreme gradient boosting regressor (XGBR) achieved impressively small yield errors, 0.0172 t/ha, and 0.0243 t/ha, 0.0001 t/ha, and 0.001 t/ha, respectively. However, the DNNR(s), with changes to the explanatory variables to ensure generalizability to unforeseen data, DNNR(s) performed best. Further analysis reveals that a strong interaction does exist between weather and soil variables. Precisely, yield is observed to increase when precipitation is reduced and silt increased, and vice-versa. However, the degree of decrease or increase is not quantified in this paper. Contrary to existing yield models targeted towards agricultural policies and global food security, the goal of the proposed corn yield model is to empower the smallholder farmer to farm smartly and intelligently, thus the prediction model is integrated into a mobile application that includes education, and a farmer-to-market access module. 
 
-## License
-
-This project is licensed under the MIT License.
-
-Chollette, Corn-Yield-Prediction-Model-and-Mobile-Decision-Suport-System
-
-
 ## Deployment: Crop Yield Flask App
 ## Run with virtualenv
 - Create a virtualenv folder `virtualenv -p python3 venv`
@@ -32,7 +25,12 @@ Chollette, Corn-Yield-Prediction-Model-and-Mobile-Decision-Suport-System
 
 ## Citation
 If it is helpful to your work, please cite this paper:
-```
+
 @misc{....
 }
 
+## License
+
+This project is licensed under the MIT License.
+
+Chollette, Corn-Yield-Prediction-Model-and-Mobile-Decision-Suport-System
