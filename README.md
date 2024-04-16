@@ -26,7 +26,13 @@ Crop yield prediction has been modeled on the assumption that there is no intera
 ## Citation
 If it is helpful to your work, please cite this paper:
 
-@misc{....
+@misc{title={Corn Yield Prediction Model with Deep Neural Networks for Smallholder Farmer Decision Support System}, 
+      author={Chollette Olisah, Lyndon Smith, Melvyn Smith, Lawrence Morolake, Osi Ojukwu},
+      year={2024},
+      eprint={arXiv:2401.03768},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 }
 
 ## License
