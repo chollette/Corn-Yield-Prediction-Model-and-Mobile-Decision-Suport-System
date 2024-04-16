@@ -1,5 +1,5 @@
 
-# This repo is built for paper: Corn Yield Prediction Model with Deep Neural Networks for Smallholder Farmer Decision Support System (...)
+# This repo is built for the paper: Corn Yield Prediction Model with Deep Neural Networks for Smallholder Farmer Decision Support System (...)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/yourusername/yourproject.svg)](https://github.com/yourusername/yourproject/issues)
